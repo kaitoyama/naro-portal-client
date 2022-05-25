@@ -4,9 +4,8 @@
       <header :class="$style.header">
         <router-link to="/">Home</router-link>
         <router-link to="/axios">Axios</router-link>
-        <router-link to="/city/tokyo">city</router-link>
         <router-link to="/login">Login</router-link>
-        <router-link to="/country">country</router-link>
+        <router-link to="/post/10">Post</router-link>
       </header>
 
       <router-view />

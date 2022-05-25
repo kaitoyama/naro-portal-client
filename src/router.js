@@ -4,10 +4,12 @@ import HomePage from "./pages/HomePage.vue";
 import NotFound from "./pages/NotFound.vue";
 import AxiosPage from "./pages/AxiosPage.vue";
 import LoginPage from "./pages/LoginPage.vue";
+import PostPage from "./pages/PostPage.vue";
 
 const routes = [
   { path: "/", name: "home", component: HomePage, meta: { isPublic: true } },
   { path: "/axios", name: "axios", component: AxiosPage },
+  { path: "/post/:number", name: "post", component: PostPage, props: true },
   {
     path: "/login",
     name: "login",
